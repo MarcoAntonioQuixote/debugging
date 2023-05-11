@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div>
+        <h1 class="foot">
+            <div>Debug: Credit Application 💳</div>
+            <div>🦶🏽</br>🪳</div>
+        </h1>
+        <div class="container">
+            <div>
+                <button>
+                    <a href="../index.html">Home</a>
+                </button>
+                <button>
+                    <a href="math.html">Math Problems</a>
+                </button>
+                <button>
+                    <a href="creditCheck.html">Credit Check</a>
+                </button>
+                <button>
+                    <a href="yourMochaChai.html">Mocha/Chai</a>
+                </button>
+            </div>
+    
+            <div>
+                <h2>First: Three users exist. Two have credit, one bad, one good, the other has no credit. They are:</h2>
+
+                <div class="profiles">
+                    <h4>User WW: Wonder Woman, Score: 820, CreditCards: AmEx: $1000</h4>
+                    <h4>User BM: Batman, Score: 530, CreditCards: GothamEx: $9999999992</h4>
+                    <h4>User SM: Superman, no score, CreditCards: {an empty object}</h4>
+                </div>
+
+                <p>Open up your console and log them (as WW, BM, or SM) to see their data.</p>
+
+
+                <h2>Second: There is also an applyForCredit function.</h2>
+
+                <p>However, this function is broken. As you can see below, it isn't passing all of our tests. Test out the function yourself! Open up the console and try typing: </p>
+
+                <h3 class="p">applyForCredit( BM, "AmEx" ,10000000 )</h3>
+
+                <h2>Third: Head over to creditCheck.js to fix these functions.</h2>
+
+                <p>While it might seem like the function is working (because it gave us an output in the console), it's actually broken, because Batman isn't qualied for a new card. It should have thrown an error.</p>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="mocha"><p><a href="."></a></p></div>
+    <div id="messages"></div>
+    <div id="fixtrues"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../creditCheck.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="../creditCheck_test.js"></script>
+    <script>mocha.run()</script>
+</body>
+</html>

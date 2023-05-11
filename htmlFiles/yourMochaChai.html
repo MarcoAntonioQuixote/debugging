@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div>
+        <h1 class="foot">
+            <div>Debug: You Create the Test! 🧑🏽‍🔬🧪 </div>
+            <div>🦶🏽</br>🪳</div>
+        </h1>
+        <div class="container">
+            <div>
+                <button>
+                    <a href="../index.html">Home</a>
+                </button>
+                <button>
+                    <a href="math.html">Math Problems</a>
+                </button>
+                <button>
+                    <a href="creditCheck.html">Credit Check</a>
+                </button>
+                <button>
+                    <a href="yourMochaChai.html">Mocha/Chai</a>
+                </button>
+            </div>
+    
+            <div>
+                <h2>Now, it's time to write your own tests!</h2>
+
+                    <p>First, check out the requirements these functions need to accomplish.</p>
+
+                    <p>Second, find the yourMochaChai_test.js to write your own tests. </p>
+
+                    <p>Then, head to yourMochaChai.js to write your own functions.</p>
+
+                <h2>function createUser</h2>
+
+                    <p>write a function called createUser that accepts a name, PIN, and initial account balance, and saves that in a user object, returning the entire object. It should:</p>
+
+                    <ul>
+                        <li>Only allow 4 digit PIN numbers, throwing an error if PINS are not the right length</li>
+                        <li>Have the option to randomly generate a PIN</li>
+                        <li>Throw an error if a user doesn't open the account with any funds</li>
+                    </ul>
+
+                <h2>function sortUsers</h2>
+
+                <p>write a function called sortUsers that sorts all users from lowest to highest amount of money in their account. It should</p>
+                <ul>
+                    <li>Throw an error if any user has an undefined amount</li>
+                    <li>Throw an error if it receives something that's not an array of users</li>
+                    <li>Actually organize and order users</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div id="mocha"><p><a href="."></a></p></div>
+    <div id="messages"></div>
+    <div id="fixtrues"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+    <script src="../yourMochaChai.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="../yourMochaChai_test.js"></script>
+    <script>mocha.run()</script>
+</body>
+</html>

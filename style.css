@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(36, 37, 39);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.foot {
+    background-image: linear-gradient(to right, red , yellow);
+    border-radius: 10px;
+}
+
+.container {
+    padding: 5vw;
+}
+
+.profiles {
+    border: solid gold;
+    border-radius: 10px;
+    margin: 2vw;
+    padding-left: 2vw;
+}
+
+p, .p {
+    margin-left: 5vw;
+}
